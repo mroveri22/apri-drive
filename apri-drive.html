@@ -2,16 +2,11 @@
 <html lang="it">
 <head>
   <meta charset="UTF-8">
-  <title>Apri Drive</title>
+  <title>Apri Google Drive</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="refresh" content="2; url=https://drive.google.com/drive/folders/1Z5GTaAwLIJgcvEaxs9NyPj6VvNRhQ-Xy?usp=sharing">
   <script>
-    // Prova ad aprire direttamente l’app Google Drive
-    window.location.href = "https://drive.google.com/drive/folders/1Z5GTaAwLIJgcvEaxs9NyPj6VvNRhQ-Xy?usp=sharing";
-    // Se non funziona entro 1.5 secondi, apre il link web
-    setTimeout(function() {
-      window.location.href = "https://drive.google.com/drive/folders/1Z5GTaAwLIJgcvEaxs9NyPj6VvNRhQ-Xy?usp=sharing";
-    }, 1500);
+    // Prova ad aprire direttamente l'app Google Drive
+    window.location.href = "drive://drive.google.com/drive/folders/1Z5GTaAwLIJgcvEaxs9NyPj6VvNRhQ-Xy";
   </script>
   <style>
     body {
@@ -20,11 +15,27 @@
       padding: 50px;
       background: #f8f8f8;
     }
+    .button {
+      display: inline-block;
+      padding: 15px 25px;
+      font-size: 18px;
+      cursor: pointer;
+      text-align: center;
+      text-decoration: none;
+      color: #fff;
+      background-color: #4285F4;
+      border-radius: 8px;
+      margin-top: 20px;
+    }
+    .button:hover {
+      background-color: #357ae8;
+    }
   </style>
 </head>
 <body>
-  <h2>Sto aprendo la cartella in Google Drive...</h2>
-  <p>Se non si apre automaticamente, <a href="https://drive.google.com/drive/folders/1Z5GTaAwLIJgcvEaxs9NyPj6VvNRhQ-Xy?usp=sharing">tocca qui per aprirla</a>.</p>
-</body>
-</html>
-
+  <h2>Aprendo la cartella Google Drive...</h2>
+  <p>Se non si apre automaticamente, puoi cliccare subito il pulsante qui sotto:</p>
+  <a class="button" href="https://drive.google.com/drive/folders/1Z5GTaAwLIJgcvEaxs9NyPj6VvNRhQ-Xy?usp=sharing" target="_blank">
+    Apri Cartella
+  </a>
+</bod

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Apri in Google Drive</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="refresh" content="2; url=https://drive.google.com/drive/folders/1Z5GTaAwLIJgcvEaxs9NyPj6VvNRhQ-Xy?usp=sharing">
+  <script>
+    // Prova ad aprire direttamente l’app Drive
+    window.location.href = "drive://drive.google.com/drive/folders/1Z5GTaAwLIJgcvEaxs9NyPj6VvNRhQ-Xy";
+    // Se l’app non si apre, dopo 1.5s torna al link web
+    setTimeout(function() {
+      window.location.href = "https://drive.google.com/drive/folders/1Z5GTaAwLIJgcvEaxs9NyPj6VvNRhQ-Xy?usp=sharing";
+    }, 1500);
+  </script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 50px;
+      background: #f8f8f8;
+    }
+  </style>
+</head>
+<body>
+  <h2>Aprendo la cartella Google Drive...</h2>
+  <p>Se non si apre automaticamente, <a href="https://drive.google.com/drive/folders/1Z5GTaAwLIJgcvEaxs9NyPj6VvNRhQ-Xy?usp=sharing">clicca qui</a>.</p>
+</body>
+</html>

@@ -2,13 +2,13 @@
 <html lang="it">
 <head>
   <meta charset="UTF-8">
-  <title>Apri in Google Drive</title>
+  <title>Apri Drive</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="refresh" content="2; url=https://drive.google.com/drive/folders/1Z5GTaAwLIJgcvEaxs9NyPj6VvNRhQ-Xy?usp=sharing">
   <script>
-    // Prova ad aprire direttamente l’app Drive
+    // Prova ad aprire direttamente l’app Google Drive
     window.location.href = "drive://drive.google.com/drive/folders/1Z5GTaAwLIJgcvEaxs9NyPj6VvNRhQ-Xy";
-    // Se l’app non si apre, dopo 1.5s torna al link web
+    // Se non funziona entro 1.5 secondi, apre il link web
     setTimeout(function() {
       window.location.href = "https://drive.google.com/drive/folders/1Z5GTaAwLIJgcvEaxs9NyPj6VvNRhQ-Xy?usp=sharing";
     }, 1500);
@@ -23,7 +23,7 @@
   </style>
 </head>
 <body>
-  <h2>Aprendo la cartella Google Drive...</h2>
-  <p>Se non si apre automaticamente, <a href="https://drive.google.com/drive/folders/1Z5GTaAwLIJgcvEaxs9NyPj6VvNRhQ-Xy?usp=sharing">clicca qui</a>.</p>
+  <h2>Sto aprendo la cartella in Google Drive...</h2>
+  <p>Se non si apre automaticamente, <a href="https://drive.google.com/drive/folders/1Z5GTaAwLIJgcvEaxs9NyPj6VvNRhQ-Xy?usp=sharing">tocca qui per aprirla</a>.</p>
 </body>
 </html>
